@@ -9,9 +9,15 @@ import java.util.List;
 
 @Service
 public class StudentService {
+    private final StundentRepository studentRepo ;
+
+    public StudentService(StundentRepository studentRepo){
+       this.studentRepo = studentRepo;
+    }
+
     public  List<Student> getStudent() {
 
 
-        return List.of(new Student(1L,"Ashan", "30B",28, "ashan@gmail.com", LocalDate.of(1996,8,15)));
+        return studentRepo.findAll();
     }
 }

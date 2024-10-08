@@ -19,8 +19,6 @@ public class StratSpringApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StratSpringApplication.class, args);
-//        StudentController.calledString2();
-        System.out.println("ini adlaah spring");
     }
 
 
